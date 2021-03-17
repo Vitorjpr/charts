@@ -3,9 +3,9 @@ entries:
   baseapp:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-03-17T19:57:48.4052913-03:00"
+    created: "2021-03-17T20:00:22.0692886-03:00"
     description: A Helm chart for Kubernetes
-    digest: 7ac09165c545589c6e74655a1916e2cf79250a79df88cb8ba05111c205858474
+    digest: c1496c8ff5f741548bbf002a54d835b36b639dc14c3f632617cdd608ce34c45f
     name: baseapp
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   spring-boot-restful:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-03-17T19:57:48.4056985-03:00"
+    created: "2021-03-17T20:00:22.0696739-03:00"
     description: A Helm chart for Kubernetes
     digest: c190400790df38dca6a7464cd78a67b8a8aa40b70fa8a1a59849405e0ab4a6f6
     name: spring-boot-restful
@@ -22,4 +22,4 @@ entries:
     urls:
     - https://vitorjpr.github.io/charts/spring-boot-restful-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-17T19:57:48.4047615-03:00"
+generated: "2021-03-17T20:00:22.068725-03:00"
