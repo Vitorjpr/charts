@@ -3,7 +3,7 @@ entries:
   spring-boot-restful:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-03-17T15:29:20.8700732-03:00"
+    created: "2021-03-17T16:40:11.8990339-03:00"
     description: A Helm chart for Kubernetes
     digest: c190400790df38dca6a7464cd78a67b8a8aa40b70fa8a1a59849405e0ab4a6f6
     name: spring-boot-restful
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://vitorjpr.github.io/charts/spring-boot-restful-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-17T15:29:20.8695353-03:00"
+generated: "2021-03-17T16:40:11.8982962-03:00"
