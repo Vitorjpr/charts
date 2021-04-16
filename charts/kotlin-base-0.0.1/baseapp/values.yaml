@@ -72,6 +72,16 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
+configmap:
+  enabled: true
+  metadata:
+    name: baseapp
+  data:
+    application.yaml:
+      nats:
+        addresses: ""
+        password: ''
+
 nodeSelector: {}
 
 tolerations: []
