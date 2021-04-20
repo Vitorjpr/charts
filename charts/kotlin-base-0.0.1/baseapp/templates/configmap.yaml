@@ -6,7 +6,5 @@ metadata:
   labels:
     {{- include "baseapp.labels" . | nindent 4 }}
 data:
-  {{- with .Values.configmap.data }}
-    {{- toYaml . | nindent 4 }}
-  {{- end }}
+    {{- toYaml .Values.configmap.data | nindent 4 }}
 {{- end }}
