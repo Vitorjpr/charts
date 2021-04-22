@@ -1,25 +1,36 @@
 apiVersion: v1
 entries:
-  baseapp:
+  chart-sample:
   - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2021-03-17T20:00:22.0692886-03:00"
+    appVersion: 1.16.0
+    created: "2021-04-22T15:09:23.839791-03:00"
     description: A Helm chart for Kubernetes
-    digest: c1496c8ff5f741548bbf002a54d835b36b639dc14c3f632617cdd608ce34c45f
-    name: baseapp
+    digest: d883ef6a73d9c46c2df407694f1e57658c07c8c410398bfd641febcacac6010a
+    name: chart-sample
     type: application
     urls:
-    - https://vitorjpr.github.io/charts/baseapp-0.1.0.tgz
-    version: 0.1.0
+    - chart-sample-0.1.1.tgz
+    version: 0.1.1
+  kotlin-base:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-04-22T15:09:23.840977-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 38ea14d8707c643817ad17b4da1e23c0dc602f9b388f6279f41690a799397c78
+    name: kotlin-base
+    type: application
+    urls:
+    - kotlin-base-0.1.1.tgz
+    version: 0.1.1
   spring-boot-restful:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-03-17T20:00:22.0696739-03:00"
+    created: "2021-04-22T15:09:23.841875-03:00"
     description: A Helm chart for Kubernetes
     digest: c190400790df38dca6a7464cd78a67b8a8aa40b70fa8a1a59849405e0ab4a6f6
     name: spring-boot-restful
     type: application
     urls:
-    - https://vitorjpr.github.io/charts/spring-boot-restful-0.1.0.tgz
+    - spring-boot-restful-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-17T20:00:22.068725-03:00"
+generated: "2021-04-22T15:09:23.836875-03:00"
