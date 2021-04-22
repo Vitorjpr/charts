@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "chart-sample.name" -}}
+{{- define "kotlin-base.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "chart-sample.fullname" -}}
+{{- define "kotlin-base.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "chart-sample.chart" -}}
+{{- define "kotlin-base.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "chart-sample.labels" -}}
-helm.sh/chart: {{ include "chart-sample.chart" . }}
-{{ include "chart-sample.selectorLabels" . }}
+{{- define "kotlin-base.labels" -}}
+helm.sh/chart: {{ include "kotlin-base.chart" . }}
+{{ include "kotlin-base.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,17 +45,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "chart-sample.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "chart-sample.name" . }}
+{{- define "kotlin-base.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "kotlin-base.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "chart-sample.serviceAccountName" -}}
+{{- define "kotlin-base.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "chart-sample.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "kotlin-base.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
@@ -64,9 +64,9 @@ Create the name of the service account to use
 {{/*
 Create the name of the config map to use
 */}}
-{{- define "chart-sample.configMapName" -}}
+{{- define "kotlin-base.configMapName" -}}
 {{- if .Values.configMap.create }}
-{{- default (include "chart-sample.fullname" .) .Values.configMap.name }}
+{{- default (include "kotlin-base.fullname" .) .Values.configMap.name }}
 {{- else }}
 {{- default "default" .Values.configMap.name }}
 {{- end }}
@@ -75,9 +75,9 @@ Create the name of the config map to use
 {{/*
 Create the name of the secret to use
 */}}
-{{- define "chart-sample.secretName" -}}
+{{- define "kotlin-base.secretName" -}}
 {{- if .Values.secret.create }}
-{{- default (include "chart-sample.fullname" .) .Values.secret.name }}
+{{- default (include "kotlin-base.fullname" .) .Values.secret.name }}
 {{- else }}
 {{- default "default" .Values.secret.name }}
 {{- end }}

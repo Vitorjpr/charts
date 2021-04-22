@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "chart-sample.fullname" . }}
+  name: {{ include "kotlin-base.fullname" . }}
   labels:
-    {{- include "chart-sample.labels" . | nindent 4 }}
+    {{- include "kotlin-base.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "chart-sample.fullname" . }}
+    name: {{ include "kotlin-base.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:

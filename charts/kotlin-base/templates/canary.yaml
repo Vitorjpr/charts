@@ -2,22 +2,22 @@
 apiVersion: flagger.app/v1beta1
 kind: Canary
 metadata:
-  name: {{ include "chart-sample.fullname" . }}
+  name: {{ include "kotlin-base.fullname" . }}
   labels:
-    {{- include "chart-sample.labels" . | nindent 4 }}
+    {{- include "kotlin-base.labels" . | nindent 4 }}
 spec:
   # deployment reference
   targetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "chart-sample.fullname" . }}
+    name: {{ include "kotlin-base.fullname" . }}
   progressDeadlineSeconds: {{ .Values.canary.progressDeadlineSeconds }}
   # HPA reference (optional)
   {{- if .Values.autoscaling.enabled }}
   autoscalerRef:
     apiVersion: autoscaling/v2beta1
     kind: HorizontalPodAutoscaler
-    name: {{ include "chart-sample.fullname" . }}
+    name: {{ include "kotlin-base.fullname" . }}
   {{- end }}
   service:
     # service port number
@@ -31,7 +31,7 @@ spec:
     {{- end }}
     # Istio virtual service host names (optional)
     hosts:
-    - {{ include "chart-sample.fullname" . }}
+    - {{ include "kotlin-base.fullname" . }}
     trafficPolicy:
       tls:
         mode: {{ .Values.canary.trafficPolicy.mode }}

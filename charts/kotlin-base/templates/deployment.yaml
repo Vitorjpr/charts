@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "chart-sample.fullname" . }}
+  name: {{ include "kotlin-base.fullname" . }}
   labels:
-    {{- include "chart-sample.labels" . | nindent 4 }}
+    {{- include "kotlin-base.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "chart-sample.selectorLabels" . | nindent 6 }}
+      {{- include "kotlin-base.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,13 +18,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "chart-sample.selectorLabels" . | nindent 8 }}
+        {{- include "kotlin-base.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "chart-sample.serviceAccountName" . }}
+      serviceAccountName: {{ include "kotlin-base.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
@@ -47,9 +47,9 @@ spec:
               port: http
           envFrom:
           - configMapRef:
-              name: {{ include "chart-sample.configMapName" . }}
+              name: {{ include "kotlin-base.configMapName" . }}
           - secretRef:
-              name: {{ include "chart-sample.secretName" . }}
+              name: {{ include "kotlin-base.secretName" . }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
