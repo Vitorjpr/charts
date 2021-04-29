@@ -93,6 +93,14 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   targetMemoryUtilizationPercentage: 80
 
+stream:
+  create: true
+  data:
+    subjects: ["orders.*"]
+    maxAge: 1h
+    replicas: 1
+    storage: file
+
 canary:
   enabled: false
   # the maximum time in seconds for the canary deployment
