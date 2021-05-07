@@ -1,0 +1,11 @@
+{{- if .Values.stream.create -}}
+apiVersion: jetstream.nats.io/v1beta1
+kind: Stream
+metadata:
+  name: {{ include "flutter-base.fullname" . }}
+spec:
+  name: {{ include "flutter-base.fullname" . }}
+  {{- with .Values.stream.data }}
+    {{- toYaml . | nindent 2 }}
+  {{- end }}
+{{- end -}}
