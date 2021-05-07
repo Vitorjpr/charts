@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "kotlin-base.fullname" . }}
+  name: {{ include "flutter-base.fullname" . }}
   labels:
-    {{- include "kotlin-base.labels" . | nindent 4 }}
+    {{- include "flutter-base.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "kotlin-base.selectorLabels" . | nindent 6 }}
+      {{- include "flutter-base.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,13 +18,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "kotlin-base.selectorLabels" . | nindent 8 }}
+        {{- include "flutter-base.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "kotlin-base.serviceAccountName" . }}
+      serviceAccountName: {{ include "flutter-base.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
@@ -45,9 +45,9 @@ spec:
             {{- toYaml .Values.probes.startupProbe | nindent 12 }}
           envFrom:
           - configMapRef:
-              name: {{ include "kotlin-base.configMapName" . }}
+              name: {{ include "flutter-base.configMapName" . }}
           - secretRef:
-              name: {{ include "kotlin-base.secretName" . }}
+              name: {{ include "flutter-base.secretName" . }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

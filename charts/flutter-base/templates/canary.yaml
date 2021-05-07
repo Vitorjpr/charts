@@ -1,0 +1,55 @@
+{{- if .Values.canary.enabled -}}
+apiVersion: flagger.app/v1beta1
+kind: Canary
+metadata:
+  name: {{ include "flutter-base.fullname" . }}
+  labels:
+    {{- include "flutter-base.labels" . | nindent 4 }}
+spec:
+  # deployment reference
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: {{ include "flutter-base.fullname" . }}
+  progressDeadlineSeconds: {{ .Values.canary.progressDeadlineSeconds }}
+  # HPA reference (optional)
+  {{- if .Values.autoscaling.enabled }}
+  autoscalerRef:
+    apiVersion: autoscaling/v2beta1
+    kind: HorizontalPodAutoscaler
+    name: {{ include "flutter-base.fullname" . }}
+  {{- end }}
+  service:
+    # service port number
+    port: {{ .Values.service.port }}
+    # container port number or name (optional)
+    targetPort: http
+    # Istio gateways (optional)
+    {{- with .Values.canary.gateways }}
+    gateways:
+      {{- toYaml . | nindent 6 }}
+    {{- end }}
+    # Istio virtual service host names (optional)
+    hosts:
+    - {{ include "flutter-base.fullname" . }}
+    trafficPolicy:
+      tls:
+        mode: {{ .Values.canary.trafficPolicy.mode }}
+    {{- with .Values.canary.retries }}
+    retries:
+      {{- toYaml . | nindent 6 }}
+    {{- end }}
+  analysis:
+    interval: {{ .Values.canary.analysis.interval }}
+    threshold: {{ .Values.canary.analysis.threshold }}
+    maxWeight: {{ .Values.canary.analysis.maxWeight }}
+    stepWeight: {{ .Values.canary.analysis.stepWeight }}
+    {{- with .Values.canary.analysis.metrics }}
+    metrics:
+      {{- toYaml . | nindent 6 }}
+    {{- end }}
+    {{- with .Values.canary.analysis.webhooks }}
+    webhooks:
+      {{- toYaml . | nindent 6 }}
+    {{- end }}
+{{- end }}
