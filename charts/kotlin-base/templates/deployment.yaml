@@ -41,8 +41,8 @@ spec:
             {{- toYaml .Values.probes.livenessProbe | nindent 12 }}
           readinessProbe:
             {{- toYaml .Values.probes.readinessProbe | nindent 12 }}
-          startupProbe:
-            {{- toYaml .Values.probes.startupProbe | nindent 12 }}
+          # startupProbe:
+          #   {{- toYaml .Values.probes.startupProbe | nindent 12 }}
           envFrom:
           - configMapRef:
               name: {{ include "kotlin-base.configMapName" . }}
