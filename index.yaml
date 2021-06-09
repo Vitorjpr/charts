@@ -3,7 +3,7 @@ entries:
   chart-sample:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-09T12:59:38.48099-03:00"
+    created: "2021-06-09T14:20:19.462192-03:00"
     description: A Helm chart for Kubernetes
     digest: d883ef6a73d9c46c2df407694f1e57658c07c8c410398bfd641febcacac6010a
     name: chart-sample
@@ -14,7 +14,7 @@ entries:
   flutter-base:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-09T12:59:38.483124-03:00"
+    created: "2021-06-09T14:20:19.464285-03:00"
     description: A Helm chart for Kubernetes
     digest: fdd869343b4d04bd5ce7071e74aa41e7210abbb488eab1063ed040220f811a16
     name: flutter-base
@@ -24,7 +24,7 @@ entries:
     version: 0.1.0
   istio-base:
   - apiVersion: v1
-    created: "2021-06-09T12:59:38.486813-03:00"
+    created: "2021-06-09T14:20:19.472345-03:00"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: 76a86482c71f72b47d32e4473cc8646a6368b3b1fbaf5fa609f17560119b8cd3
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -38,7 +38,7 @@ entries:
     version: 1.1.0
   istio-discovery:
   - apiVersion: v1
-    created: "2021-06-09T12:59:38.495149-03:00"
+    created: "2021-06-09T14:20:19.478044-03:00"
     description: Helm chart for istio control plane
     digest: cc3cb14f4b39c4da30e98582f0dcd1d80497919e2e016b49d608a08e246161ac
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -54,7 +54,7 @@ entries:
     version: 1.2.0
   istio-egress:
   - apiVersion: v1
-    created: "2021-06-09T12:59:38.496719-03:00"
+    created: "2021-06-09T14:20:19.480523-03:00"
     description: Helm chart for deploying Istio gateways
     digest: a25862a66569f377e391264b5aaf0e20992a3329dac2db383a75289e093ec81d
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -70,7 +70,7 @@ entries:
     version: 1.1.0
   istio-ingress:
   - apiVersion: v1
-    created: "2021-06-09T12:59:38.498261-03:00"
+    created: "2021-06-09T14:20:19.483093-03:00"
     description: Helm chart for deploying Istio gateways
     digest: 7d36310cb45a610c386f568ae416d323428b4275ce3d8988e9da13cc31edcf9b
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -87,7 +87,7 @@ entries:
   kotlin-base:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-09T12:59:38.502989-03:00"
+    created: "2021-06-09T14:20:19.488718-03:00"
     description: A Helm chart for Kubernetes
     digest: 5019b372e476f971fd78b96a656d27eb43165317664811c20ac4f6b666fb796a
     name: kotlin-base
@@ -97,7 +97,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-09T12:59:38.501405-03:00"
+    created: "2021-06-09T14:20:19.486168-03:00"
     description: A Helm chart for Kubernetes
     digest: 94e376df862b3b79545b14498ae31c7aab2c4b69902acaaba52a92ca84900d86
     name: kotlin-base
@@ -107,7 +107,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-09T12:59:38.49999-03:00"
+    created: "2021-06-09T14:20:19.484635-03:00"
     description: A Helm chart for Kubernetes
     digest: c0957d083bf7f992abf4e70e3b34055e3c9bf22a341cba6b0782c7038f87e0ad
     name: kotlin-base
@@ -118,12 +118,12 @@ entries:
   managed-secrets:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-06-09T12:59:38.5033-03:00"
+    created: "2021-06-09T14:20:19.489384-03:00"
     description: A Helm chart for Kubernetes
-    digest: e130be24a9774b338ef3d3b0b0fc617052771f14e032d288922fc585d9f7cd65
+    digest: c4519ccc1724385a4324019145399e1d018b8e79ccb79245941db8c0cca82c35
     name: managed-secrets
     type: application
     urls:
-    - managed-secrets-0.1.0.tgz
-    version: 0.1.0
-generated: "2021-06-09T12:59:38.478359-03:00"
+    - managed-secrets-0.1.1.tgz
+    version: 0.1.1
+generated: "2021-06-09T14:20:19.459777-03:00"
