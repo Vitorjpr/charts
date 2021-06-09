@@ -1,0 +1,15 @@
+# Default values for managed-secrets.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: ""
+fullnameOverride: ""
+
+# - type: "Opaque"
+#   name: ""
+#   namespace: ""
+#   annotations: {}
+#   labels: {}
+#   stringData: {}
+
+secrets: []
