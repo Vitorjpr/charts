@@ -1,0 +1,9 @@
+# Default values for configmaps.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: ""
+fullnameOverride: ""
+
+# you MUST add a array as configmaps
+configmaps: []
