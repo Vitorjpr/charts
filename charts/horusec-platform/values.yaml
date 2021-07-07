@@ -43,7 +43,7 @@ components:
     extraEnv: [ ]
     ingress:
       enabled: true
-      host: analytic.local
+      host: analytic-horus.ctl.iupp.io
       path: /analytic
       tls: null
       #   secretName: analytic-tls
@@ -79,7 +79,7 @@ components:
     extraEnv: [ ]
     ingress:
       enabled: true
-      host: api.local
+      host: api-horus.ctl.iupp.io
       path: /api
       tls: null
       #   secretName: api-tls
@@ -115,7 +115,7 @@ components:
     extraEnv: [ ]
     ingress:
       enabled: true
-      host: auth.local
+      host: auth-horus.ctl.iupp.io
       path: /auth
       tls: null
       #   secretName: auth-tls
@@ -153,7 +153,7 @@ components:
     extraEnv: [ ]
     ingress:
       enabled: true
-      host: core.local
+      host: core-horus.ctl.iupp.io
       path: /core
       tls: null
       #   secretName: core-tls
@@ -189,7 +189,7 @@ components:
     extraEnv: [ ]
     ingress:
       enabled: true
-      host: manager.local
+      host: manager-horus.ctl.iupp.io
       path: /manager
       tls: null
       #   secretName: manager-tls
@@ -226,7 +226,7 @@ components:
     extraEnv: [ ]
     ingress:
       enabled: true
-      host: messages.local
+      host: messages-horus.ctl.iupp.io
       path: /messages
       tls: null
       #   secretName: messages-tls
@@ -274,7 +274,7 @@ components:
     extraEnv: [ ]
     ingress:
       enabled: true
-      host: vulnerability.local
+      host: vulnerability-horus.ctl.iupp.io
       path: /vulnerability
       tls: null
       #   secretName: vulnerability-tls
@@ -310,7 +310,7 @@ components:
     extraEnv: [ ]
     ingress:
       enabled: true
-      host: webhook.local
+      host: webhook-horus.ctl.iupp.io
       path: /webhook
       tls: null
       #   secretName: webhook-tls
