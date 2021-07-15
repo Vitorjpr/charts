@@ -3,7 +3,7 @@ entries:
   chart-sample:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-07T11:34:46.5833407-03:00"
+    created: "2021-07-15T12:27:24.29896376-03:00"
     description: A Helm chart for Kubernetes
     digest: d883ef6a73d9c46c2df407694f1e57658c07c8c410398bfd641febcacac6010a
     name: chart-sample
@@ -14,7 +14,7 @@ entries:
   custom-resource-provider:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-07T11:34:46.5835314-03:00"
+    created: "2021-07-15T12:27:24.299144141-03:00"
     description: A Helm chart for Kubernetes CRD's
     digest: 5cde65ce60450e590bec6273dbd1765cc30bbcb8faf61874f80a4962642e64d6
     name: custom-resource-provider
@@ -24,7 +24,7 @@ entries:
   flutter-base:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-07T11:34:46.5841004-03:00"
+    created: "2021-07-15T12:27:24.299787655-03:00"
     description: A Helm chart for Kubernetes
     digest: aeb560dcbe3f8cb6461447cad481167720f9b4d254e9342b676b7cb9d516fd0d
     name: flutter-base
@@ -35,7 +35,7 @@ entries:
   horusec-analytic-helm:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-07T11:34:46.584512-03:00"
+    created: "2021-07-15T12:27:24.300282773-03:00"
     description: A Helm chart for Kubernetes
     digest: e097916c7b68bb5cedc012c979e0f47cde751b1c2b71c7d8378e1ab2a7e32bd2
     name: horusec-analytic-helm
@@ -46,7 +46,7 @@ entries:
   horusec-api-helm:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-07T11:34:46.584938-03:00"
+    created: "2021-07-15T12:27:24.315527352-03:00"
     description: A Helm chart for Kubernetes
     digest: fcd9aeca19ad6df58b4943c985a3c5e16fc8026c6d0f84ddc56352bc20f8ccf8
     name: horusec-api-helm
@@ -57,7 +57,7 @@ entries:
   horusec-auth-helm:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-07T11:34:46.5855033-03:00"
+    created: "2021-07-15T12:27:24.316224174-03:00"
     description: A Helm chart for Kubernetes
     digest: 4f6b2efcc59467aba32bfdbada3ca7bd29967130e0e4fe818a58612c7c583e99
     name: horusec-auth-helm
@@ -68,7 +68,7 @@ entries:
   horusec-core-helm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-07T11:34:46.5859539-03:00"
+    created: "2021-07-15T12:27:24.316795279-03:00"
     description: A Helm chart for Kubernetes
     digest: 3fb9c8ccca5e47466becc994028d38cde95ff47d0c4ac08dcb2a4af02930531b
     name: horusec-core-helm
@@ -79,7 +79,7 @@ entries:
   horusec-manager:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2021-07-07T11:34:46.5872636-03:00"
+    created: "2021-07-15T12:27:24.31728325-03:00"
     description: A Helm chart for Kubernetes
     digest: 07be07d58119765f3128dde2a47c0ad561310b2572751689c6f59fcf74e6a236
     name: horusec-manager
@@ -90,7 +90,7 @@ entries:
   horusec-messages:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-07T11:34:46.5877085-03:00"
+    created: "2021-07-15T12:27:24.317844182-03:00"
     description: A Helm chart for Kubernetes
     digest: bc047decad393a3f3ba9c7c399d9d66d1894f1af46dd717a8f57dc5e6f73d3f9
     name: horusec-messages
@@ -101,7 +101,7 @@ entries:
   horusec-platform:
   - apiVersion: v2
     appVersion: 2.14.0
-    created: "2021-07-07T11:34:46.5892203-03:00"
+    created: "2021-07-15T12:27:24.319792122-03:00"
     description: A Helm chart for Kubernetes
     digest: 8f9fb9a20a304f0436b9a8f0bd7f734effca57e72457d5b59ef57b1f578307f7
     home: https://horusec.io
@@ -119,7 +119,7 @@ entries:
   horusec-vulnerability-helm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-07T11:34:46.5897459-03:00"
+    created: "2021-07-15T12:27:24.320343162-03:00"
     description: A Helm chart for Kubernetes
     digest: 2896b7d57ab9c846ab2692954a3db3737d4c4b4e0e704bde736868d4a578285f
     name: horusec-vulnerability-helm
@@ -130,7 +130,7 @@ entries:
   horusec-webhook-helm:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-07T11:34:46.5902182-03:00"
+    created: "2021-07-15T12:27:24.321479301-03:00"
     description: A Helm chart for Kubernetes
     digest: 3184efff0794cddb97188634afb35c5d9ee561eb62cf949f89d7cca26832bc42
     name: horusec-webhook-helm
@@ -140,7 +140,7 @@ entries:
     version: 1.0.1
   istio-base:
   - apiVersion: v1
-    created: "2021-07-07T11:34:46.5922821-03:00"
+    created: "2021-07-15T12:27:24.32347456-03:00"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: 76a86482c71f72b47d32e4473cc8646a6368b3b1fbaf5fa609f17560119b8cd3
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -154,7 +154,7 @@ entries:
     version: 1.1.0
   istio-discovery:
   - apiVersion: v1
-    created: "2021-07-07T11:34:46.5942609-03:00"
+    created: "2021-07-15T12:27:24.325431713-03:00"
     description: Helm chart for istio control plane
     digest: cc3cb14f4b39c4da30e98582f0dcd1d80497919e2e016b49d608a08e246161ac
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -170,7 +170,7 @@ entries:
     version: 1.2.0
   istio-egress:
   - apiVersion: v1
-    created: "2021-07-07T11:34:46.5950398-03:00"
+    created: "2021-07-15T12:27:24.326328375-03:00"
     description: Helm chart for deploying Istio gateways
     digest: a25862a66569f377e391264b5aaf0e20992a3329dac2db383a75289e093ec81d
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -186,7 +186,7 @@ entries:
     version: 1.1.0
   istio-ingress:
   - apiVersion: v1
-    created: "2021-07-07T11:34:46.5958721-03:00"
+    created: "2021-07-15T12:27:24.327872465-03:00"
     description: Helm chart for deploying Istio gateways
     digest: 7d36310cb45a610c386f568ae416d323428b4275ce3d8988e9da13cc31edcf9b
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -202,7 +202,7 @@ entries:
     version: 1.1.0
   istio-operator:
   - apiVersion: v1
-    created: "2021-07-07T11:34:46.5961712-03:00"
+    created: "2021-07-15T12:27:24.328233413-03:00"
     description: Helm chart for deploying Istio operator
     digest: 6e1e6ab4f869a2098f8cefc3993527b9044826ab9169b4e3ac34d05c6392a6cb
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -218,7 +218,7 @@ entries:
   kotlin-base:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-07T11:34:46.5976999-03:00"
+    created: "2021-07-15T12:27:24.330035397-03:00"
     description: A Helm chart for Kubernetes
     digest: 5019b372e476f971fd78b96a656d27eb43165317664811c20ac4f6b666fb796a
     name: kotlin-base
@@ -228,7 +228,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-07T11:34:46.597151-03:00"
+    created: "2021-07-15T12:27:24.329398489-03:00"
     description: A Helm chart for Kubernetes
     digest: 94e376df862b3b79545b14498ae31c7aab2c4b69902acaaba52a92ca84900d86
     name: kotlin-base
@@ -238,7 +238,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-07T11:34:46.5966427-03:00"
+    created: "2021-07-15T12:27:24.328825225-03:00"
     description: A Helm chart for Kubernetes
     digest: c0957d083bf7f992abf4e70e3b34055e3c9bf22a341cba6b0782c7038f87e0ad
     name: kotlin-base
@@ -249,7 +249,7 @@ entries:
   managed-configmap:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-07T11:34:46.5978468-03:00"
+    created: "2021-07-15T12:27:24.330201625-03:00"
     description: A Helm chart for Kubernetes Configmaps
     digest: 781ae0710b046e8e0526d57b1bd17da062a3b1979ff6aa31e4d8f6165d58c0ad
     name: managed-configmap
@@ -259,7 +259,7 @@ entries:
   managed-secrets:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-07T11:34:46.5979973-03:00"
+    created: "2021-07-15T12:27:24.33037548-03:00"
     description: A Helm chart for Kubernetes
     digest: c4519ccc1724385a4324019145399e1d018b8e79ccb79245941db8c0cca82c35
     name: managed-secrets
@@ -270,11 +270,22 @@ entries:
   managed-serviceaccounts:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-07T11:34:46.5981612-03:00"
+    created: "2021-07-15T12:27:24.330538539-03:00"
     description: A Helm chart for Kubernetes Service Accounts
     digest: 2f7caecb41014beea957191f95684bee315ac150c5af15d89b1f4ba9701312b5
     name: managed-serviceaccounts
     urls:
     - managed-serviceaccounts-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-07T11:34:46.5827415-03:00"
+  react-base:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-07-15T12:27:24.33117578-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 385cb26f4add6716e21713d94d2065ad0bf999a2910ce2265fb9b797f00f26f1
+    name: react-base
+    type: application
+    urls:
+    - react-base-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-07-15T12:27:24.298191619-03:00"
