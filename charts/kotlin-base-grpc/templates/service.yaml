@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "kotlin-base-grpc.fullname" . }}
+  labels:
+    {{- include "kotlin-base-grpc.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "kotlin-base-grpc.selectorLabels" . | nindent 4 }}
