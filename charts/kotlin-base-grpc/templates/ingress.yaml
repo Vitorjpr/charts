@@ -30,15 +30,15 @@ spec:
         paths:
           {{- range .paths }}
           - backend:
-            service:
-              name: grpc
-              port: 
-                number: {{ $svcGrpcPort }}
+              service:
+                name: grpc
+                port: 
+                  number: {{ $svcGrpcPort }}
           - backend:
-            service:
-              name: http
-              port: 
-                number: {{ $svcPort }}
+              service:
+                name: http
+                port: 
+                  number: {{ $svcPort }}
             path: {{ .path }}
             pathType: {{ .pathType }}
           {{- end }}
