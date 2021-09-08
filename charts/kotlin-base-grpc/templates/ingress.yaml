@@ -34,8 +34,7 @@ spec:
                 name: http
                 port: 
                   number: {{ $svcPort }}
-            path: {{ .path }}
-            pathType: {{ .pathType }}
+            path: /*
           - backend:
               service:
                 name: grpc
