@@ -2,9 +2,9 @@
 apiVersion: jetstream.nats.io/v1beta1
 kind: Stream
 metadata:
-  name: {{ include "kotlin-base-grpc.fullname" . }}
+  name: {{ include "kotlin-base.fullname" . }}
 spec:
-  name: {{ include "kotlin-base-grpc.fullname" . }}
+  name: {{ include "kotlin-base.fullname" . }}
   {{- with .Values.stream.data }}
     {{- toYaml . | nindent 2 }}
   {{- end }}
