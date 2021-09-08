@@ -28,19 +28,19 @@ spec:
     - host: {{ .host | quote }}
       http:
         paths:
-          {{- range .paths }}
-          - path: {{ .path }}
-            pathType: {{ .pathType }}
-            - backend:
-              service:
-                name: grpc
-                port: 
-                  number: {{ $svcGrpcPort }}
-            - backend:
-              service:
-                name: http
-                port: 
-                  number: {{ $svcPort }}
-          {{- end }}
+        {{- range .paths }}
+        - backend:
+          service:
+            name: grpc
+            port: 
+              number: {{ $svcGrpcPort }}
+        - backend:
+          service:
+            name: http
+            port: 
+              number: {{ $svcPort }}
+          path: {{ .path }}
+          pathType: {{ .pathType }}
+        {{- end }}
     {{- end }}
   {{- end }}
