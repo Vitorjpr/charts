@@ -1,6 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $fullName := include "kotlin-base.fullname" . -}}
 {{- $svcPort := .Values.service.port -}}
+{{- $svcGrpcPort := .Values.serviceGrpc.port -}}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -30,9 +31,14 @@ spec:
           {{- range .paths }}
           - path: {{ .path }}
             pathType: {{ .pathType }}
-            backend:
+            - backend:
               service:
-                name: {{ $fullName }}
+                name: grpc
+                port: 
+                  number: {{ $svcGrpcPort }}
+            - backend:
+              service:
+                name: http
                 port: 
                   number: {{ $svcPort }}
           {{- end }}
